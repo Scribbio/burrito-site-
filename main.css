@@ -1,0 +1,127 @@
+/* Apply these styles to literally everything */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  border-top: 5px solid green;
+}
+
+.header__title-container {
+  background-color: orange;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  height: 100px;
+}
+
+.header__title {
+  margin-left: 1rem;
+}
+
+.nav {
+  background-color: orangered;
+  padding: 1rem;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  color: white;
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background-image: url("./background.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__title {
+  background-color: white;
+  padding: 1rem;
+  border: 5px solid green;
+}
+
+.content-container {
+  display: flex;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: lightgrey;
+}
+
+.article {
+  background-color: white;
+  width: 300px;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.article__photo {
+  width: 100%;
+}
+
+.article--featured {
+  background-color: green;
+  color: white;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.comment {
+  background-color: lightgrey;
+  margin: 1rem;
+  padding: 1rem;
+  width: 75%;
+}
+
+.comment-reply {
+  align-self: flex-end;
+}
+
+.footer {
+  background-color: orange;
+  padding: 0 1rem;
+  display: flex;
+  height: 100px;
+  align-items: center;
+}
+
+.footer__left {
+  color: black;
+  margin-left: 1rem;
+}
+
+.footer__right {
+  margin-left: auto;
+}
